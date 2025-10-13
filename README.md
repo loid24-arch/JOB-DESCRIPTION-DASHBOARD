@@ -74,8 +74,7 @@ Responsive layout with clear labels and tooltips
 
 🌐 Live Dashboard
 
-🔗 View on Tableau Public
- ([](https://public.tableau.com/views/COMPANYSIZEVSCOMPANYMECHASIAIDEALIST/COM_SIZEVSCOM_?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+🔗 View on Tableau Public([](https://public.tableau.com/views/COMPANYSIZEVSCOMPANYMECHASIAIDEALIST/COM_SIZEVSCOM_?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
  # QUALIFICATION MAP  DASHBOARD
  🗺️ Task 1 – Qualification Drilldown Map (Interactive Map Visualization)
@@ -168,5 +167,5 @@ Tooltip includes: Company Name, Job Title, Salary Range, and Qualification
 
 🌐 Live Dashboard
 
-🔗 View on Tableau Public
- [](https://public.tableau.com/shared/QF2BT6F9M?:display_count=n&:origin=viz_share_link)
+🔗 View on Tableau Public[
+](https://public.tableau.com/shared/CGP9YXCBP?:display_count=n&:origin=viz_share_link)
