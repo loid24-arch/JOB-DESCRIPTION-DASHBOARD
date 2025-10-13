@@ -1,0 +1,15 @@
+import pandas as pd
+df=pd.read_csv('/Users/nitisharathod/Downloads/NULL CLASS INTERNSHIP /job_descriptions.csv')
+print(df.head())
+print(df.isnull().sum())
+#The CSV file has some null values in last #
+#removing it #
+df.dropna(inplace=True)
+print(df.isnull().sum())#checking it again#
+
+#to check if the csv file contain duplicate values#
+print(df.drop_duplicates().sum())
+#the csv file does not have any duplicate values#
+#downloading updated csv file in system#
+df.to_csv( "cleaned_CSV_file.csv",index=False)
+print("✅file saved ")
