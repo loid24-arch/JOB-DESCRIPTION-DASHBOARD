@@ -77,7 +77,7 @@ Responsive layout with clear labels and tooltips
 🔗 View on Tableau Public
  ([](https://public.tableau.com/views/COMPANYSIZEVSCOMPANYMECHASIAIDEALIST/COM_SIZEVSCOM_?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
- # QUALIFICATION MAP 
+ # QUALIFICATION MAP  DASHBOARD
  🗺️ Task 1 – Qualification Drilldown Map (Interactive Map Visualization)
 📘 Overview
 
