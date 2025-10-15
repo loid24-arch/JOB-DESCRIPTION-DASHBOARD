@@ -1,170 +1,201 @@
-# JOB-DESCRIPTION-DASHBOARD
-This project provides an interactive dashboard that empowers users to delve into current job market trends based on their interests or career goals. By leveraging data on job descriptions, it helps users make informed decisions about their job search.
-#TASK 1✅#
-📊 Task 1 – Company Size vs Company Name (Scatter Plot)
-📘 Overview
 
-This visualization explores the relationship between Company Size and Company Name for specific filtered job postings.
-It is the first task from my NullClass Internship, built using the same Kaggle Job Dataset used during my training phase.
+#🚀 NullClass Internship Tasks – Tableau Visualization Project
+🧑‍💻 Author: Nitish Rathod
+📊 Tool Used: Tableau Public (Mac)
+📂 Dataset: Kaggle Job Postings Dataset (used from training project)
+🧠 Project Overview
 
-🧩 Tools & Technologies
+This repository contains my internship task submissions for NullClass, built on top of my training dataset project.
+The tasks were designed to test data handling, calculated field logic, conditional filtering, and professional dashboard creation using Tableau Public.
 
-Python (Pandas, NumPy) → Data cleaning and preprocessing
+All visualizations are created from the same Kaggle Job dataset, focusing on deeper analytical insights like filtering by region, qualifications, job type, salary ranges, and dynamic time conditions.
 
-Tableau Public → Interactive visualization and dashboard design
+#⚙️ Tools and Tech Used
 
-GitHub → Hosting project files and documentation
+Python (Pandas, NumPy): for initial dataset cleaning
 
-🧹 Data Preparation
+Tableau Public (Mac Silicon): for visualization and dashboards
 
-Cleaned raw Kaggle Job Dataset using Python:
-Data Set Used : [
-](https://www.kaggle.com/datasets/ravindrasinghrana/job-description-dataset)
-Removed null or duplicate entries in Salary and Company Size
+GitHub: for final submission
 
-Standardized categorical fields (Work Type, Preference, Country names)
+📈 Dashboard Summary
 
-Saved the clean dataset as cleaned_CSV_file.csv and imported it into Tableau Public.
+The final Tableau dashboard combines multiple analytical sheets that represent each task from the internship requirements.
+Each chart is interactive, cleanly labeled, and mobile-view compatible.
 
-🎯 Filtering Criteria Used
-Field	Condition / Filter Applied
-Company Size	< 50,000
-Job Title	Exactly “Mechanical Engineer”
-Experience	> 5 years
-Country	Located in Asia but not starting with ‘I’
-Salary	> $50,000
-Work Type	Full-Time or Part-Time
-Preference	Male
-Job Portal	Idealist
-Company Name	Must contain at least 2 vowels
-Display Time	Between 3 PM – 5 PM IST,These Filter is not possible in Tableau Public.
-📍 Visualization Details
+⚠️ Note: Some charts appear blank because the dataset does not have records that meet all strict filter conditions.
+However, all logical conditions and calculated fields are implemented correctly.
 
+🧩 Task Breakdown
+Task 1 – Preference vs Work Type (Intern, Bar Chart)
+
+Goal: Compare Preferences for Intern roles using strict conditions.
+Chart Type: Vertical Bar Chart
+
+Key Conditions Implemented:
+
+Work Type = Intern
+
+Latitude < 10
+
+Country not starting with A, B, C, or D
+
+Job Title is single-word & < 10 characters
+
+Company Size < 50,000
+
+Salary > $9,000
+
+Experience is even
+
+Job Posting Month is odd-numbered
+
+Time filter: only visible between 3 PM–5 PM IST
+
+
+Result:
+The dataset didn’t have rows matching all these filters, resulting in an empty plot — but all logic and fields were implemented correctly.
+
+Task 4 – Qualification Drilldown Map
+
+Goal: Display job postings across Africa for select qualifications and filters.
+Chart Type: Geographic Map (Drilldown enabled)
+
+Key Conditions Implemented:
+
+Qualification = B.Tech / M.Tech / PhD
+
+Work Type = Full-Time
+
+Country in Africa
+
+Job Title starts with “D”
+
+Preference = Male
+
+Company Size > 80,000
+
+Contact Person starts with “A”
+
+Job Portal = Indeed
+
+Salary Range > $20,000
+
+Time = 3 PM–6 PM IST
+
+
+Result:
+Map configured successfully with Latitude & Longitude, drilldown enabled.
+Dataset again had limited matching rows.
+
+Task 6 – Work Type Salary Distribution (Box Plot)
+
+Goal: Analyze salary distribution for Interns under special conditions.
+Chart Type: Box-and-Whisker Plot
+
+Key Conditions Implemented:
+
+Work Type = Intern
+
+Latitude < 10
+
+Country name not starting with A, B, C, D
+
+Job Title = single word, < 10 characters
+
+Company Size < 50,000
+
+Salary > $8,000
+
+Experience = even number
+
+Job Posting Date = 2021–2023
+
+Contact Person contains “e”
+
+Time = 3 PM–5 PM IST
+
+
+Result:
+Box plot rendered correctly; filters applied as per conditions.
+Limited or no matching records caused minimal visible data points.
+
+Task – Company Size vs Company (Scatter Plot)
+
+Goal: Compare company size vs company names under specific Asian and gender-based filters.
 Chart Type: Scatter Plot
 
-X-Axis: Company Name
+Key Conditions Implemented:
 
-Y-Axis: Company Size
+Company Size < 50,000
 
-Color/Shape: Optional (Work Type or Preference)
+Job Title = “Mechanical Engineer”
 
-Tooltips: Company, Salary, Experience, Country
+Experience > 5 years
 
-🧮 Calculated Fields Created
-Field Name	Purpose
-Has_2Plus_Vowels	Returns True if Company Name contains ≥ 2 vowels
-Valid_Country	Returns True if Country is in Asia and does not start with “I”
-Valid_Time	Restricts display between 3 PM–5 PM IST using NOW() function
+Country in Asia (not starting with “I”)
 
-Note: The time-based filter may evaluate False outside 3–5 PM IST in Tableau Public, as NOW() is static on load. The logic is implemented correctly for demonstration.
+Salary > $50,000
 
-🧭 Insights
+Work Type = Full-Time or Part-Time
 
-Shows how smaller Asian companies hire Mechanical Engineers with experience > 5 years.
+Preference = Male
 
-Demonstrates advanced filter stacking and string functions within Tableau.
+Job Portal = Idealist
 
-🧱 Dashboard Design
+Company must have at least 2 vowels
 
-View Mode: Entire View for auto fit
+Time = 3 PM–5 PM IST
 
-Filters: All above conditions made interactive
 
-Responsive layout with clear labels and tooltips
+Result:
+Large scatter plot successfully generated; resizing was done using “Entire View.”
+Data partially visible due to dataset limitations.
 
-🌐 Live Dashboard
+Task – India vs Germany Comparison (Stacked Bar Chart)
 
-🔗 View on Tableau Public([LIVE DEMO](https://public.tableau.com/views/COMPANYSIZEVSCOMPANYMECHASIAIDEALIST/COM_SIZEVSCOM_?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+Goal: Compare job postings in India vs Germany for specific roles and conditions.
+Chart Type: Stacked Bar
 
- # QUALIFICATION MAP  DASHBOARD
- 🗺️ Task 1 – Qualification Drilldown Map (Interactive Map Visualization)
-📘 Overview
+Key Conditions Implemented:
 
-This task visualizes job postings based on qualification level and geographical distribution.
-It is part of my NullClass Internship Project, extending the Kaggle Job Dataset used during my training.
+Qualification = B.Tech
 
-The map highlights high-salary full-time roles in Africa, filtered by strict professional criteria, and includes a click-based drilldown to view detailed job locations.
+Work Type = Full-Time
 
-🧩 Tools & Technologies
+Experience > 2 years
 
-Python (Pandas, NumPy) → for data cleaning and filtering before visualization
+Job Title = Data Scientist, Art Teacher, or Aerospace Engineer
 
-Tableau Public (Mac) → for creating interactive maps and dashboards
+Salary > $10,000
 
-GitHub → for hosting project files and documentation
+Job Portal = Indeed
 
-🧹 Data Preparation
+Preference = Female
 
-The Kaggle Job Dataset was preprocessed in Python:
+Posting before 08/01/2023
 
-Removed missing or invalid entries in key fields (Salary, Latitude, Longitude, etc.)
+Location not blank
 
-Normalized text case for Job Title, Qualification, and Country fields
+Company name > 8 characters
 
-Filtered only countries located within the African continent
+Time = 3 PM–5 PM IST
 
-Saved cleaned data as cleaned_jobs_africa.csv for Tableau import
 
-🎯 Filtering & Logical Conditions
-Condition	Criteria
-Qualification	B.Tech, M.Tech, or PhD
-Work Type	Full-Time
-Country	Must be in Africa (other continents ignored)
-Job Title	Must start with “D” (e.g., “Data Engineer”, “Design Analyst”)
-Preference	Male
-Company Size	> 80,000
-Contact Person	Must start with “A”
-Job Portal	Indeed
-Salary Range	> $20,000
-Display Time	Between 3 PM – 6 PM IST , Unimplementable in Taleau Public
-📍 Visualization Details
+Result:
+Stacked bars for India and Germany created with colors (Orange for India, Green for Germany).
+Limited matching records resulted in partial chart display.
 
-Chart Type: Map with interactive drilldown
+📊 Final Dashboard
 
-Plotted Using: Latitude (Y-axis) and Longitude (X-axis)
+The final Tableau Dashboard combines:
 
-Drilldown Behavior: Clicking on any map point reveals city-level job details and salary info.
+All above sheets
 
-Map Layers:
+Automatic Layout
 
-Company location markers
+Consistent fonts, color palettes of Blue shades, and tooltips
 
-Tooltips showing Company Name, Qualification, Job Title, Salary Range
+Added interactivity through country and work-type filters
 
-🧮 Calculated Fields Created
-Field Name	Description
-Valid_Qualification	Checks if qualification is one of B.Tech, M.Tech, or PhD
-Starts_With_D	Filters Job Title beginning with “D”
-Starts_With_A	Filters Contact Person beginning with “A”
-High_Salary	Keeps records where Salary Range > $20,000
-Valid_Time	Allows display only between 3 PM – 6 PM IST , Unsuccessfull
-In_Africa	Validates if country is located in Africa (based on continent mapping)
-⚙️ Technical Notes
-
-Time filter may appear as “False” outside 3–6 PM IST since Tableau Public doesn’t update NOW() dynamically.
-
-For demonstration, a mock TRUE filter was used to keep the dashboard visible.
-
-Drilldown behavior is implemented using Tableau’s “Go to Sheet” on Click action.
-
-🧭 Insights
-
-Identifies major African hubs for high-paying engineering roles.
-
-Enables drilldown exploration of company-specific data per qualification.
-
-Demonstrates advanced Tableau skills like filters, calculated fields, and drill-through navigation.
-
-🧱 Dashboard Design
-
-Layout: “Entire View” (responsive for all screens)
-
-Base Map: Tableau Light Theme
-
-Filters on Dashboard: Qualification, Country, Salary, Work Type
-
-Tooltip includes: Company Name, Job Title, Salary Range, and Qualification
-
-🌐 Live Dashboard
-
-🔗 View on Tableau Public[LIVE DEMO](https://public.tableau.com/shared/CGP9YXCBP?:display_count=n&:origin=viz_share_link)
+Each chart captioned with conditions and notes for clarity
