@@ -260,7 +260,7 @@ Used “Entire View” layout for readability
 
 Consistent color scheme and labeling across visuals
 
-🔗 View My Tableau Dashboard on Tableau Public
+🔗[View My Tableau Dashboard on Tableau Public][https://public.tableau.com/app/profile/nitish.rathod/viz/Book1_17603705851780/Dashboard1]
 
 🧠 Notes & Observations
 
