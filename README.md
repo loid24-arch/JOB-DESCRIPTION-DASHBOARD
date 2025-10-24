@@ -3,6 +3,7 @@
 📊 Tool Used: Tableau Public (Mac)
 📂 Dataset: Kaggle Job Postings Dataset (used from training project) 
 🔗[Link of Data Set][https://www.kaggle.com/datasets/ravindrasinghrana/job-description-dataset]
+🖥️[HTML SITE LINK ][http://localhost:63342/DashBoard_Live_Link/Dashboard.html?_ijt=vph47f4uf5don41visrcpj98th&_ij_reload=RELOAD_ON_SAVE]
 
 🧠 Project Overview
 
